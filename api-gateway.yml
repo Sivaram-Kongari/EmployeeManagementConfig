@@ -7,8 +7,6 @@ spring:
 
 cloud:
    gateway:
-      server:
-         webmvc:
             routes:
                - id: EMPLOYEE-SERVICE
                  uri: lb://EMPLOYEE-SERVICE
