@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: API-GATEWAY-PRACTICE
+    name: API-GATEWAY
