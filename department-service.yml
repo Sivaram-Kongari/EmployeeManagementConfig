@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: DEPARTMENT-SERVICE-PRACTICE
+    name: DEPARTMENT-SERVICE
 
   datasource:
     url: jdbc:mysql://localhost:3306/department_db
