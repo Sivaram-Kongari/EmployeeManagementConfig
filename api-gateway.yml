@@ -7,17 +7,18 @@ spring:
 
 cloud:
    gateway:
-      routes:
-         - id: employee-service
-           uri: lb://EMPLOYEE-SERVICE
-           predicates:
-              - Path=/employees/**
+      mvc:
+         routes:
+            - id: employee-service
+              uri: lb://EMPLOYEE-SERVICE
+              predicates:
+                 - Path=/employees/**
 
-         - id: department-service
-           uri: lb://DEPARTMENT-SERVICE
-           predicates:
-              - Path=/departments/**
-              
+            - id: department-service
+              uri: lb://DEPARTMENT-SERVICE
+              predicates:
+                 - Path=/departments/**
+
 eureka:
    client:
       service-url:
